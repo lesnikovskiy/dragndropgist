@@ -114,6 +114,9 @@ const touchend = (e) => {
 };
 
 const touchcancel = (e) => {
+	if (dragObject.avatar)
+		dragObject.avatar.rollback();
+	
 	console.log("You cancelled touch");
 };
 
@@ -121,8 +124,3 @@ document.addEventListener("touchstart", touchstart, false);
 document.addEventListener("touchmove", touchmove, false);
 document.addEventListener("touchend", touchend, false);
 document.addEventListener("touchcancel", touchcancel, false);
-
-let mDraggable = document.querySelector("#mobile-draggable");
-mDraggable.onmousemove((e) => {
-	
-});
