@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/dragDemo.css">
+</head>
+
+<body>
+
+  <div style="height:64px">
+    <img src="https://js.cx/browsers/chrome.svg" class="draggable">
+    <img src="https://js.cx/browsers/firefox.svg" class="draggable">
+    <img src="https://js.cx/browsers/ie.svg" class="draggable">
+    <img src="https://js.cx/browsers/opera.svg" class="draggable">
+    <img src="https://js.cx/browsers/safari.svg" class="draggable">
+  </div>
+
+  <p>Drag browser here:</p>
+
+  <div class="computer droppable"></div>
+  
+  <div id="mobile-draggable" draggable="true">Drag me!</div>
+  
+  <script src="https://cdn.polyfill.io/v1/polyfill.js?features=Element.prototype.closest"></script>
+  <script type="text/javascript" src="js/mobile-dragging.js"></script>
+
+</body>
+
+</html>

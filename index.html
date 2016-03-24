@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Drag&Drop</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/main.css" />	
+</head>
+<body>
+	<div id="columns">
+	  <div class="column" draggable="true"><header>A</header></div>
+	  <div class="column" draggable="true"><header>B</header></div>
+	  <div class="column" draggable="true"><header>C</header></div>
+	  <div class="column" id="some_area" draggable="true" style="border: 1px solid gray; height: 50px; width: 300px; position: relative; top: 400px;"></div>
+	</div>
+	<!--<canvas id="canvas-container"></canvas>-->
+	<div id="ball" class="draggable">
+		<img src="ball.svg" alt="()" />
+	</div>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
